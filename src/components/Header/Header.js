@@ -5,14 +5,12 @@ import logo from '../../images/logo.svg';
 
 const Header = () => {
   return (
-    <div>
-      <header className='bg-black flex justify-between px-5 py-7'>
-        <figure>
-          <img src={logo} alt="logo" />
-        </figure>
-        <Navbar />
-      </header>
-    </div>
+    <header className='flex justify-between px-5 py-7 absolute w-full z-10'>
+      <figure>
+        <img src={logo} alt="logo" />
+      </figure>
+      <Navbar />
+    </header>
   );
 };
 

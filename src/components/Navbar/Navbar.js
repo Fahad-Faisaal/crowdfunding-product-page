@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <img src={hamburger}  alt="" />
+        <img src={hamburger}  alt="menu" className='w-6' />
       </nav>
     </div>  
   );
