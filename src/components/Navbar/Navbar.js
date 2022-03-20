@@ -6,7 +6,7 @@ const Navbar = () => {
     const navItems = document.getElementById('nav-items');
     navItems.classList.contains('hidden') ? navItems.classList.remove('hidden') : navItems.classList.add('hidden');
   };
-  
+
   return (
     <div>
       <nav> 
@@ -15,12 +15,13 @@ const Navbar = () => {
           <li className='text-2xl font-medium px-5 border-b py-6'>Discover</li>
           <li className='text-2xl font-medium px-5 py-6'>Get Started</li>
         </ul>
-        <div className='cursor-pointer' onClick={hamburgerMenuHandler}>
+        <div className='cursor-pointer hamburger-menu' onClick={hamburgerMenuHandler}>
           <img src={hamburger}  alt="menu" className='w-6' />
         </div>
       </nav>
     </div>  
   );
+  
 };
 
 export default Navbar;
